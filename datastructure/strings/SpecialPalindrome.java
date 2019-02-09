@@ -43,14 +43,13 @@ public class SpecialPalindrome {
         return result;
     }
 
-//    private static final Scanner scanner = new Scanner(System.in);
-    //private static final Scanner scanner = new Scanner(new File("./testdata.txt"));
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        //BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
-
-        Scanner scanner = new Scanner(new File("./testdata.txt"));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        //For local test
+        //BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
+        //Scanner scanner = new Scanner(new File("./testdata.txt"));
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
